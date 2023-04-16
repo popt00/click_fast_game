@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Your Cart</title>
+	<link rel="icon" href="B mart.png" type="image/png" sizes="16x16">
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='homepage.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/cart.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <style>
+      @media (min-width: 240px) {  
+      .main {width: 100%;};
+      .footer {width: 100%;}
+      .select{display: inline-block;}
+      ul{ display: none; }
+      }  
+
+      @media (min-width: 280px) {  
+        .main {width: 100%;};
+        .footer {width: 100%;};
+        .select{display: inline-block;}
+        ul{ display: none; }
+      }
+      @media (min-width: 292px) {  
+        .main {width: 100%;};
+        .footer {width: 100%;};
+        .select{display: inline-block;}
+        ul{ display: none; }
+      }
+      @media (min-width: 308px) {  
+        .main {width: 100%;};
+        .footer {width: 100%;};
+        .select{display: inline-block;}
+        ul{ display: none; }
+      }
+      @media (min-width: 328px) {  
+        .main {width: 100%;};
+        .footer {width: 100%;};
+        .select{display: inline-block;}
+        ul{ display: none; }
+      }
+      @media (min-width: 352px) {  
+        .main {width: 100%;};
+        .footer {width: 100%;};
+        .select{display: inline-block;}
+        ul{ display: none; }
+      }
+      @media (min-width: 360px) {  
+        .main {width: 100%;};
+        .footer {width: 100%;};
+        .select{display: inline-block;}
+        ul{ display: none; }
+      }
+      @media (min-width: 390px) {  
+        .main {width: 100%;};
+        .footer {width: 100%;};
+        .select{display: inline-block;}
+        ul{ display: none; }
+      }
+      @media (min-width: 410px) {  
+        .main {width: 100%;};
+        .footer {width: 100%;}
+        ul{ display: none; }
+        .select{display: inline-block;}
+        .title{
+          margin-top: 65px;
+        }
+      }
+      @media (min-width: 425px) {  
+        .main {width: 100%;};
+        .footer {width: 100%;}
+        ul{ display: none; }
+        .select{display: inline-block;}
+        .title{
+          margin-top: 65px;
+        }
+      }
+      @media (min-width: 444px) {  
+        .main {width: 100%;};
+        .footer {width: 100%;}
+        ul{ display: none; }
+        .select{display: inline-block;}
+        .title{
+          margin-top: 65px;
+        }
+      }
+      @media (min-width: 464px) {  
+        .main {width: 100%;};
+        .footer {width: 100%;}
+        ul{ display: none; }
+        .select{display: inline-block;}
+        .title{
+          margin-top: 65px;
+        }
+      }
+      @media (min-width: 484px) {  
+        .main {width: 100%;};
+        .footer {width: 100%;}
+        ul{ display: none; }
+        .select{display: inline-block;}
+        .title{
+          margin-top: 65px;
+        }
+      }
+      @media (min-width: 504px) {  
+        .main {width: 100%;};
+        .footer {width: 100%;}
+        ul{ display: none; }
+        .select{display: inline-block;}
+        .title{
+          margin-top: 65px;
+        }
+      }
+      @media (min-width: 524px) {  
+        .main {width: 100%;};
+        .footer {width: 100%;}
+        ul{ display: none; }
+        .select{display: inline-block;}
+        .title{
+          margin-top: 65px;
+        }
+      }
+      @media (min-width: 544px) {  
+        .main {width: 100%;};
+        .footer {width: 100%;}
+        ul{ display: none; }
+        .select{display: inline-block;}
+        .title{
+          margin-top: 65px;
+        }
+      }
+      @media (min-width: 673px) {  
+        .main {width: 100%;};
+        .footer {width: 100%;}
+        ul{ display: none; }
+        .select{display: inline-block;}
+        .title{
+          margin-top: 65px;
+        }
+      }
+      @media (min-width: 768px) {  
+        .main {width: 100%;};
+        .footer {width: 100%;}
+        ul{ display: none; }
+        .select{display: inline-block;}
+      }
+
+      @media (min-width: 830px) {  
+        .main {width: 100%;};
+        .footer {width: 100%;}
+        ul{ display: none; }
+        .select{display: inline-block;}
+      }
+
+      @media (min-width: 900px) {  
+        .main {width: 100%;};
+        .footer {width: 100%;}
+        ul{ display: none; }
+        .select{display: inline-block;}
+      }
+
+      @media (min-width: 949px) {  
+        .main {width: 100%;};
+        .footer {width: 100%;}
+        ul{ display: inherit; }
+        .select{display: none;}
+      }
+
+      @media (min-width: 992px) { 
+        .main {width: 100%;};
+        .footer {width: 100%;}
+        ul{ display: inherit; }
+        .select{display: none;}
+      }
+      @media (min-width: 1200px) {  
+        .main {width: 100%;};
+        .footer {width: 100%;}
+      }
+      @media (min-width: 1300px) {  
+        .main {width: 100%;};
+        .footer {width: 100%;}
+      }
+      @media (min-width: 950px) and (max-width:1100px) { 
+        .main {width: 100%;};
+        .footer {width: 100%;}
+      }
+      .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        padding: 10px;
+      }
+      .grid-item {
+        /* padding: 20px; */
+        font-size: 30px;
+        text-align: center;
+      }
+      .grid-item img:hover {
+       opacity: 0.5;
+      }
+    </style>
+</head>
+<body>
+
+<div class="main" align="center" style="background-color: #ffffff;min-height: 100%;height: 100%;">
+  
+	<div class="header">
+        <div style="max-width: 100%;">
+
+          <div style="display: inline;width: 30%;">
+            <h1 style="text-shadow: 2px 2px 4px #0095f8;color: #252525;float: left;font-size: 4vh;">B-Mart.com</h1>
+          </div>
+
+          <div style="display: inline;width: 70%;">
+
+            <ul style="float:right;margin-top: 12px;" >
+              <li><a class="active" href="homepage.html">Home</a></li>
+              <li><a class="active" href="offers.html">Offers</a></li>
+              <li><a href="contact us.html">Contact Us</a></li>
+              <li><a href="about us.html">About Us</a></li>
+              <li><a href="signup.html">Sign up</a></li>
+              <a href="cart.html"><img src="/images/Cart/cart_logo.png" title="Your Cart" style="height: 35px;float: right; width: 35px;margin-top: 10px;" href="cart.html"></a>
+          </ul>
+  
+          <select style="float: right;" class="select" onchange="location = this.value;"> 
+            <option value="" selected="selected" hidden>Select</option> 
+            
+            <option value="homepage.html">Home</option>
+            <option value="offers.html">Offers</option> 
+            <option value="contact us.html">Contact Us</option> 
+            <option value="about us.html">About Us</option> 
+            <option value="signup.html">Sign up</option> 
+            <option value="cart.html">Your Cart</option>
+          </select>
+
+          </div>
+
+        </div>
+
+  </div>
+
+<!-- code here -->
+<main id="cart-page">
+  <h2> Your items </h2>
+  <div class="cart-content">
+
+      <table id="items-cart">
+          <tbody>
+              <tr>
+                  <td><img src="./images/Electronic/computer.jpg" width="100px" alt="ninja turtle"></td>
+                  <td>
+                      <h5>Computer</h5>
+                      <p class="stock">In stock - 35 left</p>
+                      <p><label>Qty:</label><input type="number" value="1" name="qnty"> | <span>Delete</span></p>
+                  </td>
+                  <td>Price: $1020</td>
+              </tr>
+              <tr>
+                  <td><img src="./images/Frozen Foods/bhindi.jpg" width="100px" alt="chirt-min"></td>
+                  <td>
+                      <H5>PREMIUM BHINDI FROM DEEP</H5>
+                      <p class="stock">In stock - 15 left</p>
+                      <p><label>Qty:</label><input type="number" value="1" name="qnty"> | <span>Delete</span></p>
+                  </td>
+                  <td>Price: $110.50 </td>
+              </tr>
+              <tr>
+                  <td><img src="./images/Groceries/almond.jpg" width="100px" alt="jacket_black"></td>
+                  <td>
+                      <H5>ORGANIC Almond</H5>
+                      <p class="stock">In stock - last piece</p>
+                      <p><label>Qty:</label><input type="number" value="1" name="qnty"> | <span>Delete</span></p>
+                  </td>
+                  <td>Price: $13 </td>
+              </tr>
+              <tr>
+                  <td><img src="./images/Groceries/cashew.jpg" width="100px" alt="spray"></td>
+                  <td>
+                      <h5>CABIN</h5>
+                      <p class="stock">In stock - Many</p>
+                      <p><label>Qty:</label><input type="number" value="1" name="qnty"> | <span>Delete</span></p>
+                  </td>
+                  <td>Price: $11.30 </td>
+              </tr>
+              <tr>
+                  <td colspan="2"></td>
+                  <td>Subtotal: $1154.8 </td>
+              </tr>
+          </tbody>
+      </table>
+
+      <table id="cart-summary">
+          <tr>
+              <th colspan="2">You'll still have a chance to review your order before it's final.</th>
+          </tr>
+          <tr>
+              <th colspan="2">Order Summary</th>
+          </tr>
+          <tr>
+              <td>Items: </td>
+              <td>$1154.8</td>
+          </tr>
+          <tr>
+              <td>Shipping:</td>
+              <td>FREE</td>
+          </tr>
+          <tr>
+              <td>Estimated GST/HST(13%):</td>
+              <td>$95.55</td>
+          </tr>
+          <tr>
+              <td>Order Total</td>
+              <td>$1250.35</td>
+          </tr>
+          <tr>
+              <td colspan="2">
+                <button onclick="window.open('form.html', '_self')">Place Order</button>
+              </td>
+          </tr>
+
+      </table>
+  </div>
+
+</main>
+
+<!-- ends here -->
+      
+    <br><br><br>
+
+  <hr style="color: #fff;">      
+
+        <!-- /////////////////////////////////-------Footer------/////////////////////////////////// -->
+        <div class="footer123" style="width: 100%;background-color: white;height: 400px;">
+
+          <div class="123" style="width: 40%;height: 100%;background-color: white;float: left; border-right: 1px solid black;">
+      
+            <h2 style="display: block;text-decoration: underline;margin-top: 0px;font-size: 2.9vh;">Store Location:-</h2>
+            <iframe style="width: 90%;float: left;height: 70%;display: block;margin-left: 4%;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.6449756917095!2d-79.38728508456285!3d43.65555427912124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34cbc3081c61%3A0x2c07c733438a044f!2s148%20Dundas%20St%20W%2C%20Toronto%2C%20ON%20M5G%201C3!5e0!3m2!1sen!2sca!4v1648475615524!5m2!1sen!2sca" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          
+          </div>
+      
+          <div class="456" style="width: 60%;display: inline;height: 110px;background-color: white;">
+      
+            <h2 style="text-decoration: underline;font-size: 2.9vh;color: rgb(46, 79, 122);">Social:-</h2>
+            <a href="" class="fa fa-facebook"></a>
+            <a href="" class="fa fa-twitter"></a>
+            <a href="" class="fa fa-linkedin"></a>
+            <a href="" class="fa fa-instagram"></a>
+            <a href="" class="fa fa-pinterest"></a><br>
+            <h2 style="text-decoration: underline;font-size: 2.9vh;color: rgb(46, 79, 122);">E-Mail:-</h2>
+            <p style="font-size: 2.5vh;">www.b-mart.ca</p>
+            <h2 style="text-decoration: underline;font-size: 2.9vh;color: rgb(46, 79, 122);">Number:-</h2>
+            <p style="font-size: 2.5vh;">+1 123 456 7890</p><br>
+            <p style="font-size: 2.5vh;color: rgb(46, 79, 122);">Copyright © 2022 B-Mart Canada, Inc. All rights reserved.</p>
+      
+          </div>
+          
+        </div>
+      
+      </div>
+
+</body>
+</html>

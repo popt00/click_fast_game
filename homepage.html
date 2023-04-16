@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home Page</title>
+	<link rel="icon" href="B mart.png" type="image/png" sizes="16x16">
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='homepage.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      @media (min-width: 240px) {  
+      .main {width: 100%;};
+      .footer {width: 100%;}
+      .select{display: inline-block;}
+      ul{ display: none; }
+      }  
+
+      @media (min-width: 280px) {  
+        .main {width: 100%;};
+        .footer {width: 100%;};
+        .select{display: inline-block;}
+        ul{ display: none; }
+      }
+      @media (min-width: 292px) {  
+        .main {width: 100%;};
+        .footer {width: 100%;};
+        .select{display: inline-block;}
+        ul{ display: none; }
+      }
+      @media (min-width: 308px) {  
+        .main {width: 100%;};
+        .footer {width: 100%;};
+        .select{display: inline-block;}
+        ul{ display: none; }
+      }
+      @media (min-width: 328px) {  
+        .main {width: 100%;};
+        .footer {width: 100%;};
+        .select{display: inline-block;}
+        ul{ display: none; }
+      }
+      @media (min-width: 352px) {  
+        .main {width: 100%;};
+        .footer {width: 100%;};
+        .select{display: inline-block;}
+        ul{ display: none; }
+      }
+      @media (min-width: 360px) {  
+        .main {width: 100%;};
+        .footer {width: 100%;};
+        .select{display: inline-block;}
+        ul{ display: none; }
+      }
+      @media (min-width: 390px) {  
+        .main {width: 100%;};
+        .footer {width: 100%;};
+        .select{display: inline-block;}
+        ul{ display: none; }
+      }
+      @media (min-width: 410px) {  
+        .main {width: 100%;};
+        .footer {width: 100%;}
+        ul{ display: none; }
+        .select{display: inline-block;}
+        .title{
+          margin-top: 65px;
+        }
+      }
+      @media (min-width: 425px) {  
+        .main {width: 100%;};
+        .footer {width: 100%;}
+        ul{ display: none; }
+        .select{display: inline-block;}
+        .title{
+          margin-top: 65px;
+        }
+      }
+      @media (min-width: 444px) {  
+        .main {width: 100%;};
+        .footer {width: 100%;}
+        ul{ display: none; }
+        .select{display: inline-block;}
+        .title{
+          margin-top: 65px;
+        }
+      }
+      @media (min-width: 464px) {  
+        .main {width: 100%;};
+        .footer {width: 100%;}
+        ul{ display: none; }
+        .select{display: inline-block;}
+        .title{
+          margin-top: 65px;
+        }
+      }
+      @media (min-width: 484px) {  
+        .main {width: 100%;};
+        .footer {width: 100%;}
+        ul{ display: none; }
+        .select{display: inline-block;}
+        .title{
+          margin-top: 65px;
+        }
+      }
+      @media (min-width: 504px) {  
+        .main {width: 100%;};
+        .footer {width: 100%;}
+        ul{ display: none; }
+        .select{display: inline-block;}
+        .title{
+          margin-top: 65px;
+        }
+      }
+      @media (min-width: 524px) {  
+        .main {width: 100%;};
+        .footer {width: 100%;}
+        ul{ display: none; }
+        .select{display: inline-block;}
+        .title{
+          margin-top: 65px;
+        }
+      }
+      @media (min-width: 544px) {  
+        .main {width: 100%;};
+        .footer {width: 100%;}
+        ul{ display: none; }
+        .select{display: inline-block;}
+        .title{
+          margin-top: 65px;
+        }
+      }
+      @media (min-width: 673px) {  
+        .main {width: 100%;};
+        .footer {width: 100%;}
+        ul{ display: none; }
+        .select{display: inline-block;}
+        .title{
+          margin-top: 65px;
+        }
+      }
+      @media (min-width: 768px) {  
+        .main {width: 100%;};
+        .footer {width: 100%;}
+        ul{ display: none; }
+        .select{display: inline-block;}
+      }
+
+      @media (min-width: 830px) {  
+        .main {width: 100%;};
+        .footer {width: 100%;}
+        ul{ display: none; }
+        .select{display: inline-block;}
+      }
+
+      @media (min-width: 900px) {  
+        .main {width: 100%;};
+        .footer {width: 100%;}
+        ul{ display: none; }
+        .select{display: inline-block;}
+      }
+
+      @media (min-width: 949px) {  
+        .main {width: 100%;};
+        .footer {width: 100%;}
+        ul{ display: inherit; }
+        .select{display: none;}
+      }
+
+      @media (min-width: 992px) { 
+        .main {width: 100%;};
+        .footer {width: 100%;}
+        ul{ display: inherit; }
+        .select{display: none;}
+      }
+      @media (min-width: 1200px) {  
+        .main {width: 100%;};
+        .footer {width: 100%;}
+      }
+      @media (min-width: 1300px) {  
+        .main {width: 100%;};
+        .footer {width: 100%;}
+      }
+      @media (min-width: 950px) and (max-width:1100px) { 
+        .main {width: 100%;};
+        .footer {width: 100%;}
+      }
+      .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        padding: 10px;
+      }
+      .grid-item {
+        /* padding: 20px; */
+        font-size: 30px;
+        text-align: center;
+      }
+      .grid-item img:hover {
+       opacity: 0.5;
+      }
+    </style>
+</head>
+<body>
+
+<div class="main" align="center" style="background-color: #ffffff;min-height: 100%;height: 100%;">
+  
+	<div class="header">
+        <div style="max-width: 100%;">
+
+          <div style="display: inline;width: 30%;">
+            <h1 style="text-shadow: 2px 2px 4px #0095f8;color: #252525;float: left;font-size: 4vh;">B-Mart.com</h1>
+          </div>
+
+          <div style="display: inline;width: 70%;">
+
+            <ul style="float:right;margin-top: 12px;" >
+              <li><a style="background-color: #0095f8;" class="active" href="homepage.html">Home</a></li>
+              <li><a class="active" href="offers.html">Offers</a></li>
+              <li><a href="contact us.html">Contact Us</a></li>
+              <li><a href="about us.html">About Us</a></li>
+              <li><a href="signup.html">Sign up</a></li>
+              <a href="cart.html"><img src="/images/Cart/cart_logo.png" title="Your Cart" style="height: 35px;float: right; width: 35px;margin-top: 10px;" href="cart.html"></a>
+          </ul>
+  
+          <select style="float: right;" class="select" onchange="location = this.value;"> 
+            <option value="" selected="selected" hidden>Select</option> 
+            
+            <option value="homepage.html">Home</option>
+            <option value="offers.html">Offers</option>
+            <option value="contact us.html">Contact Us</option> 
+            <option value="about us.html">About Us</option> 
+            <option value="signup.html">Sign up</option> 
+            <option value="cart.html">Your Cart</option>
+          </select>
+
+          </div>
+
+        </div>
+
+  </div>
+  <h1 style="text-shadow: 2px 2px 4px #0095f8;color: #252525;font-size: 4vh; text-align: center;">OBJECTIVE OF OUR WEBSITE</h1><br>
+  <p style="font-size: 2.8vh;line-height: 1.4; margin-left: 15%;margin-right: 15%;color: black; text-align: justify;">Our online shopping Website basically 
+    provides the way consumers go shopping and 
+    purchase services and goods with reasonable price. For some consumers,shopping and purchasing online have 
+    become part of their daily lives, while others may not even care about it.</p>
+  <p style="font-size: 2.8vh;line-height: 1.4; margin-left: 15%;margin-right: 15%;color: black; text-align: justify;">The primary objective of this Website 
+    is to study the importance of Online shopping. 
+    The importance of the online shopping is to determine through two important factors. The first important factor
+     is to know customer perception about online shopping. The second major factor is to find out the factors 
+     influencing the customers to go on online shopping.</p>
+  <p style="font-size: 2.8vh;line-height: 1.4; margin-left: 15%;margin-right: 15%;color: black; text-align: justify;">Shoppers who like the variety of stores 
+    that malls have to offer but can't stand 
+    fighting the crowds, the obvious alternative is right at their fingertips. </p>
+  <p style="font-size: 2.8vh;line-height: 1.4; margin-left: 15%;margin-right: 15%;color: black; text-align: justify;">Our online shopping Website uses computer 
+    and a connection to the World Wide Web; 
+    consumers can visit many major department stores to buy a broad range of products and not even have to leave 
+    the comfort of their homes.</p>
+  <p style="font-size: 2.8vh;line-height: 1.4; margin-left: 15%;margin-right: 15%;color: black; text-align: justify;">Through our website, sending gifts to 
+    relatives and friends 
+    is easy, no matter where they are. Now, there is no need to make distance an excuse for not sending a gift on 
+    occasions like birthdays, weddings, anniversaries, Valentine’s Day, Mother’s Day, Father’s Day, and so forth.</p><br>
+
+  <div class="banner">
+    <img src="/images/HomePage/banner.jpg" style="width: 100%;">
+  </div>
+  <br><br>
+
+  <div class="grid-container">
+    <div class="grid-item">
+      <a href="offers.html"><img class="overlay" src="/images/HomePage/promotion.jpg" style="width: 100%;margin-left: 5px;;"></a>
+    </div>
+    <div class="grid-item">
+      <a href="offers.html"><img class="overlay" src="/images/HomePage/save_50.jpg" style="width: 100%;margin-left: 5px;"></a>
+    </div>
+    <div class="grid-item">
+      <a href="offers.html"><img class="overlay" src="/images/HomePage/promo_code.jpg" style="width: 100%;margin-left: 5px;"></a>
+    </div>  
+  </div><br>
+  <h1 style="text-align: center;font-size: 5vh;text-decoration: underline;">Categories</h1>
+  <br>
+  <div class="grid-container">
+    <div class="grid-item">
+      <a href="grocery.html"><img class="overlay" src="/images/HomePage/grocery.jpg" style="width: 100%;margin-left: 5px;;"></a>
+      <h1 style="text-align: center;cursor:default;font-size: 2.5vh;">Groceries</h1>
+    </div>
+    <div class="grid-item">
+      <a href="electronic.html"><img class="overlay" src="/images/HomePage/elecronic.jpg" style="width: 100%;margin-left: 5px;"></a>
+      <h1 style="text-align: center;cursor:default;font-size: 2.5vh;">Elecronics</h1>
+    </div>
+    <div class="grid-item">
+      <a href="hot.html"><img class="overlay" src="/images/HomePage/hot.jpg" style="width: 100%;margin-left: 5px;"></a>
+      <h1 style="text-align: center;cursor:default;font-size: 2.5vh;">Hot Beverages</h1>
+    </div>  
+  </div><br>
+  <div class="grid-container">
+    <div class="grid-item">
+      <a href="health.html"><img class="overlay" src="/images/HomePage/health.jpg" style="width: 100%;margin-left: 5px;;"></a>
+      <h1 style="text-align: center;cursor:default;font-size: 2.5vh;">Health</h1>
+    </div>
+    <div class="grid-item">
+      <a href="fruits.html"><img class="overlay" src="/images/HomePage/fruit.jpg" style="width: 100%;margin-left: 5px;"></a>
+      <h1 style="text-align: center;cursor:default;font-size: 2.5vh;">Fruits and Vegetables</h1>
+    </div>
+    <div class="grid-item">
+      <a href="frozen.html"><img class="overlay" src="/images/HomePage/frozen.jpg" style="width: 100%;margin-left: 5px;"></a>
+      <h1 style="text-align: center;cursor:default;font-size: 2.5vh;">Frozen Foods</h1>
+    </div>  
+  </div>
+      
+    
+    
+    <br><br><br><br><br><br>
+
+  <hr style="color: black;">      
+
+        <!-- /////////////////////////////////-------Footer------/////////////////////////////////// -->
+  <div class="footer123" style="width: 100%;background-color: white;height: 400px;">
+
+    <div class="123" style="width: 40%;height: 100%;background-color: white;float: left; border-right: 1px solid black;">
+
+      <h2 style="display: block;text-decoration: underline;margin-top: 0px;font-size: 2.9vh;">Store Location:-</h2>
+      <iframe style="width: 90%;float: left;height: 70%;display: block;margin-left: 4%;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.6449756917095!2d-79.38728508456285!3d43.65555427912124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34cbc3081c61%3A0x2c07c733438a044f!2s148%20Dundas%20St%20W%2C%20Toronto%2C%20ON%20M5G%201C3!5e0!3m2!1sen!2sca!4v1648475615524!5m2!1sen!2sca" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+    </div>
+
+    <div class="456" style="width: 60%;display: inline;height: 110px;background-color: white;">
+
+      <h2 style="text-decoration: underline;font-size: 2.9vh;color: rgb(46, 79, 122);">Social:-</h2>
+      <a href="" class="fa fa-facebook"></a>
+      <a href="" class="fa fa-twitter"></a>
+      <a href="" class="fa fa-linkedin"></a>
+      <a href="" class="fa fa-instagram"></a>
+      <a href="" class="fa fa-pinterest"></a><br>
+      <h2 style="text-decoration: underline;font-size: 2.9vh;color: rgb(46, 79, 122);">E-Mail:-</h2>
+      <p style="font-size: 2.5vh;">www.b-mart.ca</p>
+      <h2 style="text-decoration: underline;font-size: 2.9vh;color: rgb(46, 79, 122);">Number:-</h2>
+      <p style="font-size: 2.5vh;">+1 123 456 7890</p><br>
+      <p style="font-size: 2.5vh;color: rgb(46, 79, 122);">Copyright © 2022 B-Mart Canada, Inc. All rights reserved.</p>
+
+    </div>
+    
+  </div>
+
+</div>
+
+</body>
+</html>

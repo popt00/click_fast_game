@@ -1,0 +1,198 @@
+/* Form styles */
+
+.form_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+ 
+  
+  .form {
+    position: relative;
+    max-width: 400px;
+    width: 100%;
+    padding: 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #f5f5f5;
+  }
+  
+  .form h2 {
+    margin: 0 0 20px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+  }
+  
+  .input_box {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .input_box input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    background-color: transparent;
+  }
+  
+  .input_box input:focus,
+  .input_box input:valid {
+    border-bottom-color: #5f27cd;
+  }
+  
+  .input_box i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #999;
+  }
+  
+  .email {
+    left: 0;
+  }
+  
+  .password {
+    left: 0;
+  }
+  
+  .pw_hide {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #999;
+    cursor: pointer;
+  }
+  
+  .checkbox {
+    display: inline-flex;
+    align-items: center;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .checkbox input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  .forgot_pw {
+    float: right;
+    font-size: 14px;
+    color: #999;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .forgot_pw:hover {
+    color: #5f27cd;
+  }
+  
+  .button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #5f27cd;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .button:hover {
+    background-color: #4c1e9d;
+  }
+  
+  .login_signup {
+    margin-top: 20px;
+    font-size: 16px;
+    text-align: center;
+    color: #999;
+  }
+  
+  .login_signup a {
+    color: #5f27cd;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .login_signup a:hover {
+    color: #4c1e9d;
+  }
+
+  /* Form styles */
+
+  
+  .button {
+    background-color: #3f51b5;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .button:hover {
+    background-color: #1a237e;
+  }
+  
+  .login_signup {
+    font-size: 14px;
+    margin-top: 20px;
+  }
+  
+  .login_signup a {
+    color: #3f51b5;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .login_signup a:hover {
+    text-decoration: underline;
+  }
+  
+  .pw_hide {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    font-size: 18px;
+    color: #999;
+    cursor: pointer;
+  }
+  
+  .pw_hide.active {
+    display: none;
+  }
+  
+  .pw_show.active {
+    display: block;
+  }
+  
+  .pw_container {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  .pw_icon {
+    font-size: 1.2rem;
+  }
+    

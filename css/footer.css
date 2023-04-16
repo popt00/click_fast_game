@@ -1,0 +1,58 @@
+ /* Footer */
+ footer{
+    height: 180px;
+    background-color: #000;
+    color: #fff;
+    padding: 0 15px;
+    z-index: 1;
+    font-size: 0.78rem;
+}
+footer ul{
+    padding: 0;
+}
+footer ul li{
+    font-size: 0.7rem;
+    font-weight: normal;
+    text-transform: none;
+    transition: 0.4s;
+    height: 20px;
+}
+footer ul li::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width 0.3s;
+}
+footer ul li:hover::after{
+    width: 100%;
+}
+footer ul li a{
+    text-decoration: none;
+    color: #fff;
+    
+}
+footer h5{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+footer section{
+    padding: 5px ;
+    height: 100%;
+}
+footer .media img{
+    width: 25px;
+    height: 25px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.storeAddress{
+    font-size: 0.75rem;
+}
+
+@media screen and (max-width: 600px) {
+    footer section:nth-of-type(2){
+        display: none;
+    }
+}

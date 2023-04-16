@@ -1,0 +1,70 @@
+#menu{
+    border-top: 2px solid #555;
+    border-bottom: 2px solid #555;
+    margin: 10px;
+}
+ul {
+    padding: 20px;
+}
+li{
+    list-style: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+#menu li a {
+    text-decoration: none;
+    padding: 20px;
+    color: #555;
+    transition: 0.4s;
+}
+#menu li a:hover{
+    background-color: #555;
+    color: #fff;
+}
+#logo-link-h-page{
+    text-decoration: none;
+    color: #000;
+    
+}
+#menu-hamburger{
+    display: none;
+}
+
+@media screen and (max-width: 850px) {
+    #menu {
+        width: 20px;
+        height: 20px;
+        border: none;
+    }
+    .device-menu:checked ~ ul{
+        display: block !important ;
+    }
+    .menu-hamburger{
+        width: 25px !important;
+        height: 25px !important;
+        display: inline-block;
+    }
+    .menu-hamburger p{
+        border-top: 2px solid #000;
+        margin-top:5px ;
+    }
+    #menu ul{
+        display: none;
+        width: 180px;
+        position: relative;
+        background-color: #fff;
+        z-index: 3;
+    }
+    #menu li{
+        margin: 5px 0;
+    }
+    #menu li a {
+        padding: 3px 10px;
+    }
+    #menu li a:hover{
+        background-color: #555;
+        color: #fff;
+    }  
+}

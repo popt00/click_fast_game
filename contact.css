@@ -1,0 +1,255 @@
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 40%;
+    margin: auto;
+    margin-top: 3%;
+    text-align: center;
+    font-family: arial;
+  }
+  
+  .price {
+    color: grey;
+    font-size: 22px;
+  }
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .card button:hover {
+    opacity: 0.7;
+  }
+
+  .feedback {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  input[type=text], .select123, textarea {
+    width: 40%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  .submit_button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+  label {
+    display: inline-block;
+    width: 150px;
+}
+
+.openinghours {
+  font-family:Lucida Console;
+  border-radius:4px;
+  margin:10px;
+  box-shadow: 0 0 10px black;
+  padding:0 10px 0 10px;
+  overflow: hidden;
+  display: inline-block;
+}
+
+/* ////////////////////////////////////////-----MEDIA QUERIES-----////////////////////////////////////////////////// */
+@media (min-width: 240px) {  
+      .main {width: 100%;};
+      .footer {width: 100%;}
+      .select{display: inline-block;}
+      ul{ display: none; }
+      .office{margin-top: 30%;}
+      input[type=email]{width: 80%;}
+      }  
+
+      @media (min-width: 280px) {  
+        .main {width: 100%;};
+        .footer {width: 100%;};
+        .select{display: inline-block;}
+        ul{ display: none; }
+        .office{margin-top: 30%;}
+        input[type=email]{width: 80%;}
+      }
+      @media (min-width: 292px) {  
+        .main {width: 100%;};
+        .footer {width: 100%;};
+        .select{display: inline-block;}
+        ul{ display: none; }
+        .office{margin-top: 20%;}
+        input[type=email]{width: 80%;}
+      }
+      @media (min-width: 308px) {  
+        .main {width: 100%;};
+        .footer {width: 100%;};
+        .select{display: inline-block;}
+        ul{ display: none; }
+        .office{margin-top: 20%;}
+        input[type=email]{width: 80%;}
+      }
+      @media (min-width: 328px) {  
+        .main {width: 100%;};
+        .footer {width: 100%;};
+        .select{display: inline-block;}
+        ul{ display: none; }
+        .office{margin-top: 20%;}
+        input[type=email]{width: 80%;}
+      }
+      @media (min-width: 352px) {  
+        .main {width: 100%;};
+        .footer {width: 100%;};
+        .select{display: inline-block;}
+        ul{ display: none; }
+        .office{margin-top: 18%;}
+        input[type=email]{width: 80%;}
+      }
+      @media (min-width: 360px) {  
+        .main {width: 100%;};
+        .footer {width: 100%;};
+        .select{display: inline-block;}
+        ul{ display: none; }
+        .office{margin-top: 18%;}
+        input[type=email]{width: 80%;}
+      }
+      @media (min-width: 390px) {  
+        .main {width: 100%;};
+        .footer {width: 100%;};
+        .select{display: inline-block;}
+        ul{ display: none; }
+        .office{margin-top: 18%;}
+        input[type=email]{width: 80%;}
+      }
+      @media (min-width: 410px) {  
+        .main {width: 100%;};
+        .footer {width: 100%;}
+        ul{ display: inherit; }
+        .select{display: none;}
+        .title{
+          margin-top: 65px;
+        }
+        .office{margin-top: 18%;}
+        input[type=email]{width: 40%;}
+      }
+      @media (min-width: 425px) {  
+        .main {width: 100%;};
+        .footer {width: 100%;}
+        .title{
+          margin-top: 65px;
+        }
+        .office{margin-top: 18%;}
+        input[type=email]{width: 40%;}
+      }
+      @media (min-width: 444px) {  
+        .main {width: 100%;};
+        .footer {width: 100%;}
+        .title{
+          margin-top: 65px;
+        }
+        .office{margin-top: 18%;}
+        input[type=email]{width: 40%;}
+      }
+      @media (min-width: 464px) {  
+        .main {width: 100%;};
+        .footer {width: 100%;}
+        .title{
+          margin-top: 65px;
+        }
+        .office{margin-top: 18%;}
+        input[type=email]{width: 40%;}
+      }
+      @media (min-width: 484px) {  
+        .main {width: 100%;};
+        .footer {width: 100%;}
+        .title{
+          margin-top: 65px;
+        }
+        .office{margin-top: 0%;}
+        input[type=email]{width: 40%;}
+      }
+      @media (min-width: 504px) {  
+        .main {width: 100%;};
+        .footer {width: 100%;}
+        .title{margin-top: 65px;}
+        .office{margin-top: 0%;}
+        input[type=email]{width: 40%;}
+        
+      }
+      @media (min-width: 524px) {  
+        .main {width: 100%;};
+        .footer {width: 100%;}
+        .title{
+          margin-top: 65px;
+        }
+        .office{margin-top: 0%;}
+        input[type=email]{width: 40%;}
+      }
+      @media (min-width: 544px) {  
+        .main {width: 100%;};
+        .footer {width: 100%;}
+        .title{
+          margin-top: 65px;
+        }
+        .office{margin-top: 0%;}
+        input[type=email]{width: 40%;}
+      }
+      @media (min-width: 673px) {  
+        .main {width: 100%;};
+        .footer {width: 100%;}
+        .title{
+          margin-top: 65px;
+        }
+        .office{margin-top: 0%;}
+        input[type=email]{width: 40%;}
+      }
+      @media (min-width: 768px) {  
+        .main {width: 100%;};
+        .footer {width: 100%;}
+        .office{margin-top: 0%;}
+        input[type=email]{width: 40%;}
+      }
+      @media (min-width: 992px) { 
+        .main {width: 100%;};
+        .footer {width: 100%;}
+        .office{margin-top: 0%;}
+        input[type=email]{width: 40%;}
+      }
+      @media (min-width: 1200px) {  
+        .main {width: 100%;};
+        .footer {width: 100%;}
+        .office{margin-top: 0%;}
+        input[type=email]{width: 40%;}
+      }
+      @media (min-width: 1300px) {  
+        .main {width: 100%;};
+        .footer {width: 100%;}
+        .office{margin-top: 0%;}
+        input[type=email]{width: 40%;}
+      }
+      @media (min-width: 950px) and (max-width:1100px) { 
+        .main {width: 100%;};
+        .footer {width: 100%;}
+        .office{margin-top: 0%;}
+        input[type=email]{width: 40%;}
+      }
