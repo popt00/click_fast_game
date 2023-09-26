@@ -6,28 +6,33 @@ let user_x = -1, user_y = -1;
 const START_TIMER=4000;
 let exp_time = new Date().getTime();
 function play(){
+
     x= document.forms["co_frm"]["x_co"].value;
     y= document.forms["co_frm"]["y_co"].value;
+    if(x>8 || y>8 || x<=0 || y<=0){
+        window.alert("you entered incorrect values");
+        // document.getElementsByClassName("playCon")[0].innerHTML="you entered incorrect values";
+        return;
+    }
+    if(x==1 && y==1){
+        window.alert("you activated cheat mode");
+    }
     wid= x*20;hei=x*20;
     wid=Math.min(wid,200);
     hei=Math.min(hei,500);
-    let gamezone = document.getElementById("gamezone");
-    document.getElementById("gamezone").innerHTML = "";
-    document.getElementById("gamezone").width = wid;
-    document.getElementById("gamezone").height = hei;
+    let playBtn = document.getElementsByClassName("playBtn");
+    playBtn[0].style.visibility = 'hidden';
+    let playCon = document.getElementsByClassName("playCon");
     for(i=0;i<x;i++){
         for(j=0;j<y;j++){
-            const div_node = document.createElement("div");
-            
-            const image_node = document.createElement('img');
-            image_node.src = "src/Blank_Square.png";
+            const image_node = document.createElement('div');
             image_node.width = wid/x;
             image_node.height = hei/y ;
             image_node.className = "blank_s";
             image_node.id= i*y + j;
-            document.getElementById("gamezone").appendChild(image_node);
+            document.getElementById("playCon").appendChild(image_node);
         }
-        document.getElementById("gamezone").innerHTML +="<br>";
+        // document.getElementById("gamezone").innerHTML +="<br>";
     }
     var buttons = document.getElementsByClassName("blank_s");
     var buttonsCount = buttons.length;
@@ -64,9 +69,15 @@ function make_scorecard(){
 function choose_random(){
     sys_x = Math.floor(Math.random() * x);
     sys_y = Math.floor(Math.random() * y);
-    let new_one = document.getElementsByClassName("blank_s");
-    let new_node= new_one[sys_x*y+sys_y];
-    new_node.src = "src/madara.png";
+    let new_node= document.getElementsByClassName("blank_s")[sys_x*y+sys_y];
+
+    const image_node = document.createElement('img');
+    // image_node.width = wid/x;
+    // image_node.height = hei/y ;
+    image_node.src = "src/madara.png";
+    image_node.className = "madara";
+    new_node.appendChild(image_node);
+
 }
 
 function timer(){
@@ -105,7 +116,7 @@ function compare(p_id){
     }
     exp_time = new Date().getTime() + 4000 - score*200;
     var system_image_buttons = document.getElementsByClassName("blank_s");
-    system_image_buttons[sys_x*y+ sys_y].src = "src/Blank_Square.png";
+    system_image_buttons[sys_x*y+ sys_y].innerHTML="";
     choose_random();
 }
 

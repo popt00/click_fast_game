@@ -1,17 +1,56 @@
-.div{
-    display:inline;
+body{
+    background-color: rgb(187, 195, 202);
+    padding: 0;
+    margin: 0;
 }
-#mytitle {
-    text-align: center;
-    color: rgb(90, 12, 12);
+.mainContainer{
+    display: flex;align-items: center;justify-content: center;flex-direction: column;row-gap: 3rem;
+    padding: 1rem 2rem;
 }
-#gamezone{
-    border: solid 3px black;
-    padding: 10px;
+.scoreZone{
+    display: flex;align-items: center;justify-content: center;flex-direction: column;
+}
+.gameZone{
+    display: flex;align-items: center;justify-content: center;flex-direction: column;
+    border: 1px solid black;
+    width: 800px;
+    height: 800px;
+    padding: 2rem;
+    border-radius: 7%;
+    box-shadow: 1px 6px 1px 0px rgba(0, 0, 255, .2);
+
+}
+.playCon{
+    /* width: 80%; */
+    display: grid;
+    grid-template-columns: repeat(8,2fr);
+    /* background-color: aqua; */
+    align-self: center;
+    column-gap: 1rem;
+    row-gap: 1rem;
 }
 .blank_s{
-    border: solid 1px black;
-    margin: 1px;
-    /* width: 10px;
-    height: 10px */
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid black;
+    background-color: aliceblue;
+    padding: 1rem;
+    border-radius: 10%;
+}
+.madara{
+    width: 3rem;
+    height: 3rem;
+}
+.playBtn{
+    align-items: center;
+    justify-self: center;
+    width: 16rem;
+    height: 4rem;
+    border-radius: 1rem;
+    background-color: rgb(53, 122, 201);
+    box-shadow: 0px 6px 0px 0px rgba(0, 0, 255, .2);
+}
+input{
+    width: 2rem;
+
 }
