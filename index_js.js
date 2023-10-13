@@ -128,6 +128,7 @@ function death(){
     
     let nw_button = document.createElement('button');
     nw_button.textContent = "Click Me to Restart";
+    nw_button.className = "playBtn"
     nw_button.onclick = function(){
         window.location.reload();
     };
